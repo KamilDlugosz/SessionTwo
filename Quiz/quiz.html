@@ -1,0 +1,56 @@
+<DOCTYPE>
+<html>
+<head>
+  <title>Quiz</title>
+  <link rel="stylesheet" type="text/css" href="CSS\style.css">
+</head>
+
+<body>
+  <center>
+  <h1>Question One</h1>
+<h2>2 + 2 = ?</h2>
+
+
+<button type = "button" onclick ="maths () "> Pick the answer</button>
+<br>
+<p id = "maths"> ...</p>
+
+<a class="active" href="quiz.html"> Next Question </a>
+
+<script>
+
+function maths()
+{
+  operator = prompt ("Pick your answer: 2, 4, 6, 8", "")
+
+  if (operator == "2") {
+      op1 = "The correct answer is: 4"
+      document.getElementById("maths").innerHTML = op1
+  }
+
+else
+if (operator == "4") {
+    op2 = "You are correct "
+    document.getElementById("maths").innerHTML = op2
+}
+else
+if (operator == "6") {
+    op3 = "The correct answer is: 4 "
+    document.getElementById("maths").innerHTML = op3
+}
+else
+if (operator == "8") {
+    op3 = "The correct answer is: 4 "
+    document.getElementById("maths").innerHTML = op3
+}
+else
+if (operator == "") {
+    op4 = "You have selected nothing, try again "
+    document.getElementById("maths").innerHTML = op4
+}
+
+}
+</script>
+
+</center>
+</body>
